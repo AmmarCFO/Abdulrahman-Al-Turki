@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { 
-  TrendingUp, Printer, Home, Layers,
+  TrendingUp, Printer, Home, Layers, Info,
   BarChart3, CheckCircle2, Building2, MapPin, LayoutGrid, User
 } from 'lucide-react';
 import { 
@@ -531,6 +531,16 @@ export const OperatingReportBoard: React.FC<OperatingReportBoardProps> = ({
                   </div>
                 </div>
               ))}
+            </div>
+
+            {/* Note clarifying April operational start */}
+            <div className="mt-3 bg-amber-50/90 border border-amber-200/90 rounded-xl p-3 flex items-start gap-2.5 text-xs text-amber-950 font-medium shadow-2xs">
+              <Info className="w-4 h-4 text-amber-700 flex-shrink-0 mt-0.5" />
+              <p className="leading-relaxed">
+                {isAr
+                  ? 'تنويه: شهر أبريل يتضمن بيانات ٦ أيام تشغيلية فقط وليس الشهر كاملاً، نظراً لبدء إصدار التقارير التشغيلية خلال شهر أبريل.'
+                  : 'Note: April figures represent 6 operating days only rather than the full month, as operational reporting commenced mid-April.'}
+              </p>
             </div>
           </div>
         </section>
