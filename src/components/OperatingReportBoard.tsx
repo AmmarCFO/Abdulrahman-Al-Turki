@@ -161,10 +161,25 @@ export const OperatingReportBoard: React.FC<OperatingReportBoardProps> = ({
                 </div>
               </div>
               <div className="flex flex-wrap gap-1.5 pt-0.5">
-                <span className="inline-flex items-center gap-1 bg-white text-[#1d1d1f] px-2 py-1 rounded-lg border border-[#EDE5DC] text-[11px] font-extrabold shadow-2xs">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#B8865F]" />
-                  {isAr ? 'وحدات سكنية' : 'Residential Units'}
-                </span>
+                {report.unitReports && report.unitReports.length > 0 ? (
+                  report.unitReports.map((u) => (
+                    <span key={u.id} className="inline-flex items-center gap-1 bg-white text-[#1d1d1f] px-2 py-1 rounded-lg border border-[#EDE5DC] text-[11px] font-extrabold shadow-2xs">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#B8865F]" />
+                      {u.unitName[isAr ? 'ar' : 'en']}
+                    </span>
+                  ))
+                ) : (
+                  <>
+                    <span className="inline-flex items-center gap-1 bg-white text-[#1d1d1f] px-2 py-1 rounded-lg border border-[#EDE5DC] text-[11px] font-extrabold shadow-2xs">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#B8865F]" />
+                      {isAr ? 'شقة ثلاث غرف نوم (3BR)' : '3 Bedrooms (3BR)'}
+                    </span>
+                    <span className="inline-flex items-center gap-1 bg-white text-[#1d1d1f] px-2 py-1 rounded-lg border border-[#EDE5DC] text-[11px] font-extrabold shadow-2xs">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#B8865F]" />
+                      {isAr ? 'استوديو (Studio)' : 'Studio'}
+                    </span>
+                  </>
+                )}
               </div>
             </div>
           </div>

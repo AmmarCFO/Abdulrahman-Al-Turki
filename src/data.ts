@@ -102,7 +102,7 @@ export const initialOperatingReports: OperatingReport[] = [
         id: "U1-3BR",
         unitNumber: "1",
         unitName: { ar: "شقة ثلاث غرف نوم (3BR)", en: "3 Bedrooms (3BR)" },
-        occupancyRate: 37,
+        occupancyRate: 42,
         periodRevenue: 11721.95,
         collectedRevenue: 11721.95,
         operatorShare: 2930.49,
@@ -112,7 +112,7 @@ export const initialOperatingReports: OperatingReport[] = [
         id: "U2-STUDIO",
         unitNumber: "2",
         unitName: { ar: "استوديو (Studio)", en: "Studio" },
-        occupancyRate: 37,
+        occupancyRate: 32,
         periodRevenue: 3237.75,
         collectedRevenue: 3237.75,
         operatorShare: 809.43,
@@ -125,29 +125,29 @@ export const initialOperatingReports: OperatingReport[] = [
       {
         monthKey: "2026-04",
         monthName: { ar: "أبريل ٢٠٢٦", en: "April 2026" },
-        occupancyRate: 19.5,
-        studioRate: 0,
-        threeBedRate: 39
+        occupancyRate: 30,
+        studioRate: 20,
+        threeBedRate: 40
       },
       {
         monthKey: "2026-05",
         monthName: { ar: "مايو ٢٠٢٦", en: "May 2026" },
-        occupancyRate: 36,
+        occupancyRate: 37,
         studioRate: 32,
-        threeBedRate: 40
+        threeBedRate: 42
       },
       {
         monthKey: "2026-06",
         monthName: { ar: "يونيو ٢٠٢٦", en: "June 2026" },
-        occupancyRate: 20,
-        studioRate: 34,
+        occupancyRate: 21,
+        studioRate: 36,
         threeBedRate: 6
       },
       {
         monthKey: "2026-07",
         monthName: { ar: "يوليو ٢٠٢٦", en: "July 2026" },
-        occupancyRate: 57.5,
-        studioRate: 35,
+        occupancyRate: 60,
+        studioRate: 40,
         threeBedRate: 80
       }
     ],
