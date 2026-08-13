@@ -1,0 +1,8 @@
+{
+  "name": "Abdulrahman bin Abdulaziz Al-Turki",
+  "description": "Operating report for Mathwaa 56 — Al-Sahman District",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
