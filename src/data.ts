@@ -125,9 +125,9 @@ export const initialOperatingReports: OperatingReport[] = [
       {
         monthKey: "2026-04",
         monthName: { ar: "أبريل ٢٠٢٦", en: "April 2026" },
-        occupancyRate: 15,
+        occupancyRate: 19.5,
         studioRate: 0,
-        threeBedRate: 30
+        threeBedRate: 39
       },
       {
         monthKey: "2026-05",
