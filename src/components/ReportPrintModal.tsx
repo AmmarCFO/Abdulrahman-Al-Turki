@@ -185,6 +185,14 @@ export const ReportPrintModal: React.FC<ReportPrintModalProps> = ({
                           <td className="p-2 font-black text-[#B8865F]">{formatCurrency(u.netToOwner)} SAR</td>
                         </tr>
                       ))}
+                      <tr className="bg-[#1d1d1f] text-white font-bold text-[11px]">
+                        <td className="p-2">{isAr ? 'الإجمالي' : 'Total'}</td>
+                        <td className="p-2">{isAr ? 'وحدتان' : '2 Units'}</td>
+                        <td className="p-2 text-emerald-400">{report.occupancyRate}% ({isAr ? 'المتوسط' : 'Avg'})</td>
+                        <td className="p-2 text-white">{formatCurrency(report.totalRevenue)} SAR</td>
+                        <td className="p-2 text-amber-300">{formatCurrency(report.operatorShareAmount)} SAR</td>
+                        <td className="p-2 text-[#E0C9B1]">{formatCurrency(report.netToOwner)} SAR</td>
+                      </tr>
                     </tbody>
                   </table>
                 </div>
