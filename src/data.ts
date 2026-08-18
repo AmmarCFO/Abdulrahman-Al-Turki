@@ -94,7 +94,7 @@ export const initialOperatingReports: OperatingReport[] = [
     operatorSharePercentage: 25,
     operatorShareAmount: 3739.92,
     capitalExpenses: 54997.37,
-    netToOwner: -44724.09,
+    netToOwner: 11219.78,
 
     // Segregated reporting for 3BR and Studio units
     unitReports: [

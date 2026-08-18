@@ -170,8 +170,8 @@ export const ReportPrintModal: React.FC<ReportPrintModalProps> = ({
                         <th className="p-2 border border-[#EDE5DC]">{isAr ? 'النوع' : 'Type'}</th>
                         <th className="p-2 border border-[#EDE5DC]">{isAr ? 'الإشغال' : 'Occupancy'}</th>
                         <th className="p-2 border border-[#EDE5DC]">{isAr ? 'الإيراد' : 'Revenue'}</th>
-                        <th className="p-2 border border-[#EDE5DC]">{isAr ? `حصة المشغل (${report.operatorSharePercentage}%)` : 'Operator Share'}</th>
-                        <th className="p-2 border border-[#EDE5DC]">{isAr ? 'الصافي للمالك' : 'Net Owner'}</th>
+                        <th className="p-2 border border-[#EDE5DC]">{isAr ? `حصة المشغل (${report.operatorSharePercentage}%)` : `Operator Share (${report.operatorSharePercentage}%)`}</th>
+                        <th className="p-2 border border-[#EDE5DC]">{isAr ? 'صافي الدخل التشغيلي' : 'Net Operating Income'}</th>
                       </tr>
                     </thead>
                     <tbody>

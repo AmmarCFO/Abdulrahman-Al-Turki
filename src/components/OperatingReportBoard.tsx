@@ -370,7 +370,7 @@ export const OperatingReportBoard: React.FC<OperatingReportBoardProps> = ({
                   </div>
 
                   <div className="flex justify-between items-center pt-2 text-xs sm:text-sm font-black text-[#1d1d1f]">
-                    <span className="text-[#8B6F47]">• {isAr ? 'الصافي للمالك' : 'Net to Owner'}:</span>
+                    <span className="text-[#8B6F47]">• {isAr ? 'صافي الدخل التشغيلي' : 'Net Operating Income'}:</span>
                     <span className="text-[#B8865F]">{formatCurrency(u.netToOwner)} SAR</span>
                   </div>
                 </div>
@@ -396,7 +396,7 @@ export const OperatingReportBoard: React.FC<OperatingReportBoardProps> = ({
                   <th className="p-3 font-bold border-b border-stone-800">{isAr ? 'نسبة الإشغال' : 'Occupancy Rate'}</th>
                   <th className="p-3 font-bold border-b border-stone-800">{isAr ? 'الإيراد' : 'Revenue'}</th>
                   <th className="p-3 font-bold border-b border-stone-800">{isAr ? `حصة المشغل (${report.operatorSharePercentage}%)` : `Operator Share (${report.operatorSharePercentage}%)`}</th>
-                  <th className="p-3 font-bold border-b border-stone-800">{isAr ? 'الصافي للمالك' : 'Net to Owner'}</th>
+                  <th className="p-3 font-bold border-b border-stone-800">{isAr ? 'صافي الدخل التشغيلي' : 'Net Operating Income'}</th>
                 </tr>
               </thead>
               <tbody>
